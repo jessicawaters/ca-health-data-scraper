@@ -46,6 +46,15 @@ A histogram showing how many resources datasets typically contain.
 4. Average Resources Over Time
 A line chart showing how dataset complexity changes across years.
 
+## Key Findings
+
+The analysis revealed several important patterns:
+
+- A small number of California agencies account for the majority of health-related datasets, with departments such as Health Care Services and Public Health being the most active publishers. Surprisingly, the Fish adn Wildlife department had high amounts of datasets. A good reminder not all health data is about humans. 
+- Dataset publication has increased significantly in recent years, especially from 2023 through 2026, suggesting rapid growth in data availability.
+- Dataset complexity varies widely, with some datasets containing only a few resources while others contain over 200. This indicates inconsistent structuring across agencies.
+- Newer datasets tend to include more structured and multi-resource formats, which suggests improvements in data reporting practices over time.
+
 ## Scraper Performance Evaluation
 
 The performance of the web scraper was evaluated using the following criteria:
@@ -57,15 +66,6 @@ The performance of the web scraper was evaluated using the following criteria:
 - **Data quality checks:** The scraper verified response status codes and ensured that extracted fields (title, organization, dates, and resources) were consistently structured before storing them.
 
 Overall, the scraper was considered successful because it reliably collected a large, structured dataset (≈1000 records) suitable for analysis without errors or data corruption.
-
-## Key Findings
-
-The analysis revealed several important patterns:
-
-- A small number of California agencies account for the majority of health-related datasets, with departments such as Health Care Services and Public Health being the most active publishers. Surprisingly, the Fish adn Wildlife department had high amounts of datasets. A good reminder not all health data is about humans. 
-- Dataset publication has increased significantly in recent years, especially from 2023 through 2026, suggesting rapid growth in data availability.
-- Dataset complexity varies widely, with some datasets containing only a few resources while others contain over 200. This indicates inconsistent structuring across agencies.
-- Newer datasets tend to include more structured and multi-resource formats, which suggests improvements in data reporting practices over time.
 
 ## Limitations
 
