@@ -46,6 +46,18 @@ A histogram showing how many resources datasets typically contain.
 4. Average Resources Over Time
 A line chart showing how dataset complexity changes across years.
 
+## Scraper Performance Evaluation
+
+The performance of the web scraper was evaluated using the following criteria:
+
+- **Completeness of data collection:** The scraper successfully collected approximately 1000 datasets using API pagination, ensuring coverage across multiple pages of results.
+- **Stability of execution:** The script ran continuously without crashing by handling API responses and checking for valid results at each request.
+- **Efficiency:** Pagination with controlled batch sizes (100 records per request) ensured efficient and manageable data retrieval.
+- **Responsiveness to API limits:** A delay (`time.sleep`) was included between requests to prevent overwhelming the CA Open Data API and to ensure responsible scraping behavior.
+- **Data quality checks:** The scraper verified response status codes and ensured that extracted fields (title, organization, dates, and resources) were consistently structured before storing them.
+
+Overall, the scraper was considered successful because it reliably collected a large, structured dataset (≈1000 records) suitable for analysis without errors or data corruption.
+
 ## Key Findings
 
 The analysis revealed several important patterns:
